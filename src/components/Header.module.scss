@@ -1,0 +1,17 @@
+@use "styles/var";
+@use "styles/mixins";
+
+.header {
+  background-color: var.$orange-primary;
+  height: 60px;
+}
+
+.container {
+  @include mixins.container;
+
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
