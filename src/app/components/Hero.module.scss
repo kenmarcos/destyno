@@ -2,9 +2,9 @@
 @use "styles/mixins";
 
 .hero {
-  padding: 80px 16px;
-  text-align: center;
+  padding: 0 16px;
   position: relative;
+  height: calc(100vh - 60px);
 
   &::before {
     background: url("/globe.jpg") no-repeat center center/cover;
@@ -17,10 +17,16 @@
 }
 
 .container {
-  max-width: 1280px;
-  margin: 0 auto;
+  @include mixins.container;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   h1 {
+    text-align: center;
     font-weight: 900;
     font-size: var.$size-10;
     color: var.$black;
@@ -37,6 +43,7 @@
   }
 
   h2 {
+    text-align: center;
     font-size: var.$size-6;
     color: var.$gray-dark;
     max-width: 600px;
