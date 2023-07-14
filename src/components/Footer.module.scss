@@ -1,0 +1,14 @@
+@use "styles/var";
+@use "styles/mixins";
+
+.footer {
+  background-color: var.$black;
+  margin-top: var.$size-16;
+}
+
+.container {
+  @include mixins.container;
+
+  color: var.$white;
+  padding: var.$size-5;
+}
