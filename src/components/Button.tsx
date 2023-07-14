@@ -10,7 +10,7 @@ interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
 const Button = ({
   children,
   variant = "primary",
-  size = "large",
+  size = "medium",
   ...rest
 }: ButtonProps) => {
   return (
