@@ -6,7 +6,7 @@ import trips from "utils/tripsData";
 
 const RecommendedTrips = () => {
   return (
-    <section className={styles.recommendedTrips}>
+    <section id="recommendedTrips" className={styles.recommendedTrips}>
       <h2>Viagens mais recomendadas</h2>
 
       <div className={styles.gridTrips}>

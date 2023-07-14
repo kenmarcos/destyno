@@ -1,8 +1,17 @@
+"use client";
+
 import Button from "components/Button";
 
 import styles from "./Hero.module.scss";
 
 const Hero = () => {
+  const goToRecommendedTrips = () => {
+    window.scrollTo({
+      top: document.getElementById("recommendedTrips")?.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
@@ -16,7 +25,7 @@ const Hero = () => {
           tranquilidade
         </p>
 
-        <Button>Veja os destinos</Button>
+        <Button onClick={goToRecommendedTrips}>Veja os destinos</Button>
       </div>
     </section>
   );
