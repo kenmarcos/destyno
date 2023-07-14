@@ -11,10 +11,10 @@ const Hero = () => {
           <span> mais incríveis</span> do mundo!
         </h1>
 
-        <h2>
+        <p>
           Confira nossos melhores destinos para você viajar com segurança e
           tranquilidade
-        </h2>
+        </p>
 
         <Button>Veja os destinos</Button>
       </div>
