@@ -1,0 +1,17 @@
+@use "styles/var";
+@use "styles/mixins";
+
+.tripCheckout {
+  border: 1px solid var.$gray-dark;
+  border-radius: var.$size-3;
+  color: var.$gray-dark;
+  padding: var.$size-5;
+
+  h2 {
+    font-weight: 600;
+    font-size: var.$size-6;
+    padding-bottom: var.$size-5;
+    border-bottom: 1px solid var.$gray-light;
+    margin-bottom: var.$size-5;
+  }
+}

@@ -1,0 +1,61 @@
+@use "styles/var";
+@use "styles/mixins";
+
+.tripData {
+  flex: 2;
+  color: var.$gray-dark;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var.$size-6;
+
+  h2 {
+    font-weight: 600;
+    font-size: var.$size-6;
+    padding-bottom: var.$size-5;
+    border-bottom: 1px solid var.$gray-light;
+    margin-bottom: var.$size-5;
+  }
+
+  label div {
+    margin-top: var.$size-1;
+  }
+}
+
+.formGroup {
+  display: flex;
+
+  flex-direction: column;
+  gap: var.$size-4;
+  margin-bottom: var.$size-4;
+
+  @include mixins.tablet {
+    flex-direction: row;
+  }
+
+  label {
+    flex: 1;
+  }
+}
+
+.personalInfo {
+  border: 1px solid var.$gray-dark;
+  border-radius: var.$size-3;
+  padding: var.$size-5;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tripInfo {
+  border: 1px solid var.$gray-dark;
+  border-radius: var.$size-3;
+  padding: var.$size-5;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
