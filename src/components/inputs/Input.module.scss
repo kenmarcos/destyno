@@ -1,0 +1,20 @@
+@use "styles/var";
+@use "styles/mixins";
+
+.input {
+  input {
+    width: 100%;
+    border: 1px solid var.$gray-primary;
+    border-radius: var.$size-2;
+    padding: var.$size-2;
+    font-size: var.$size-4;
+
+    &:focus {
+      outline: 1px solid var.$orange-extralight;
+    }
+  }
+}
+
+.error {
+  color: var.$red-primary;
+}
