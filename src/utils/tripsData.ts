@@ -2,7 +2,7 @@ import { Trip } from "types/trips";
 
 const trips: Trip[] = [
   {
-    id: crypto.randomUUID(),
+    id: "t1",
     location: "Amalfi, Itália",
     locationDescription:
       "Amalfi é uma pitoresca cidade litorânea localizada na costa sudoeste da Itália, conhecida por sua beleza deslumbrante e charme histórico. Rodeada por imponentes penhascos, Amalfi oferece vistas espetaculares do Mar Tirreno e uma atmosfera encantadora que cativa os visitantes. Suas ruas estreitas e sinuosas estão repletas de edifícios coloridos, lojas de artesanato local, cafés aconchegantes e restaurantes que servem pratos tradicionais da culinária italiana.",
@@ -21,7 +21,7 @@ const trips: Trip[] = [
     recommended: true,
   },
   {
-    id: crypto.randomUUID(),
+    id: "t2",
     location: "New York, Estados Unidos",
     locationDescription:
       "Nova Iorque, a cidade que nunca dorme, é um vibrante centro de cultura, arte e diversidade que cativa visitantes de todo o mundo. Com seus icônicos arranha-céus, como o Empire State Building e o One World Trade Center, e ícones culturais como a Estátua da Liberdade e o Central Park, a Big Apple oferece uma experiência única e inesquecível. Passeie pelas movimentadas ruas de Manhattan, desfrute da rica cena gastronômica, explore museus renomados e assista a espetáculos de teatro da Broadway.",
@@ -40,7 +40,7 @@ const trips: Trip[] = [
     recommended: true,
   },
   {
-    id: crypto.randomUUID(),
+    id: "t3",
     location: "Florença, Itália",
     locationDescription:
       "Florença, conhecida como o berço do Renascimento, é uma cidade deslumbrante e encantadora situada no coração da Toscana, na Itália. Com sua rica história, arte magnífica e arquitetura deslumbrante, Florença é um verdadeiro tesouro para os amantes da cultura. Com suas paisagens deslumbrantes, deliciosa gastronomia e um estilo de vida cativante, Florença é um destino imperdível para qualquer viajante.",
@@ -59,7 +59,7 @@ const trips: Trip[] = [
     recommended: true,
   },
   {
-    id: crypto.randomUUID(),
+    id: "t4",
     location: "Lago Sereno, Suíça",
     locationDescription:
       "Lago Sereno é uma joia escondida da natureza, localizada em uma região tranquila e pitoresca. Com suas águas cristalinas, cercadas por exuberante vegetação e majestosas montanhas, o lago oferece uma atmosfera serena e relaxante. Os visitantes podem desfrutar de atividades como pesca, passeios de barco e trilhas panorâmicas que revelam vistas deslumbrantes. Lago Sereno é um destino imperdível para quem procura uma experiência única e memorável ao ar livre.",
@@ -78,7 +78,7 @@ const trips: Trip[] = [
     recommended: true,
   },
   {
-    id: crypto.randomUUID(),
+    id: "t5",
     location: "Madrid, Espanha",
     locationDescription:
       "Madrid, a capital vibrante da Espanha, é uma cidade que combina perfeitamente a rica herança histórica com a modernidade cosmopolita. Com seus elegantes boulevards, praças charmosas e uma arquitetura deslumbrante, Madrid encanta os visitantes com sua energia contagiante. Os amantes da cultura podem explorar os renomados museus, como o Prado, que abriga obras-primas de artistas famosos, enquanto os aficionados por gastronomia podem se deliciar com a culinária espanhola em seus diversos bares e restaurantes tradicionais.",
@@ -97,7 +97,7 @@ const trips: Trip[] = [
     recommended: false,
   },
   {
-    id: crypto.randomUUID(),
+    id: "t6",
     location: "Montreal, Canadá",
     locationDescription:
       "Descubra a vibrante e encantadora cidade de Montreal, um destino que combina harmoniosamente a sofisticação europeia com a energia cosmopolita. Situada na província de Quebec, no Canadá, Montreal cativa os visitantes com sua rica herança histórica, arquitetura deslumbrante e uma mistura única de culturas. Com festivais emocionantes, paisagens deslumbrantes e uma atmosfera acolhedora, Montreal é um verdadeiro tesouro a ser descoberto.",
@@ -116,7 +116,7 @@ const trips: Trip[] = [
     recommended: false,
   },
   {
-    id: crypto.randomUUID(),
+    id: "t7",
     location: "Oslo, Noruega",
     locationDescription:
       "Descubra Montreal, uma cidade vibrante e cosmopolita que cativa visitantes de todo o mundo. Localizada no Canadá francófono, Montreal oferece uma combinação única de história, cultura e diversidade. Explore suas charmosas ruas de paralelepípedos, onde a arquitetura europeia se mistura com arranha-céus modernos.  Com uma rica herança histórica e uma mistura cativante de tradições, Montreal é um destino imperdível para aqueles que desejam experimentar o melhor do Canadá.",
@@ -135,7 +135,7 @@ const trips: Trip[] = [
     recommended: false,
   },
   {
-    id: crypto.randomUUID(),
+    id: "t8",
     location: "Amsterdam, Holanda",
     locationDescription:
       "Amsterdam, a capital dos Países Baixos, é uma cidade encantadora e vibrante que cativa os visitantes com sua rica história, arquitetura deslumbrante e atmosfera descontraída. Conhecida por seus belos canais, museus de renome mundial, como o Museu Van Gogh e o Rijksmuseum, e uma cena artística diversificada, Amsterdam oferece uma combinação única de cultura, charme e progressismo.",
@@ -154,7 +154,7 @@ const trips: Trip[] = [
     recommended: false,
   },
   {
-    id: crypto.randomUUID(),
+    id: "t9",
     location: "Paris, França",
     locationDescription:
       "Paris, a capital romântica da França, é um destino icônico que encanta visitantes de todo o mundo. Com sua rica história, arquitetura deslumbrante e uma cultura sofisticada, a cidade das luzes oferece uma experiência única. Explore marcos mundialmente famosos, como a Torre Eiffel, o Louvre e a Catedral de Notre-Dame, ou perca-se pelas pitorescas ruas de Montmartre. Com suas avenidas elegantes, jardins exuberantes e um ambiente artístico vibrante, Paris é verdadeiramente uma cidade que cativa os sentidos e desperta paixões.",
