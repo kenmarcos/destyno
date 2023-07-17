@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 
+import Footer from "components/Footer";
 import Header from "components/Header";
 
 import "styles/global.scss";
-import Footer from "components/Footer";
+
+import Providers from "providers";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -22,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={nunito.className}>
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
