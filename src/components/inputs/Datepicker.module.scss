@@ -1,0 +1,24 @@
+@use "styles/var";
+@use "styles/mixins";
+
+.datepicker {
+  margin-top: var.$size-1;
+  position: relative;
+
+  & > div {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    border: 1px solid var.$gray-primary;
+    border-radius: var.$size-2;
+    background-color: transparent;
+    padding: var.$size-2;
+    font-size: var.$size-4;
+  }
+}
+
+.error {
+  color: var.$red-primary;
+}
