@@ -20,8 +20,15 @@ const Select = (
 ) => {
   return (
     <div className={styles.select}>
-      <select {...rest} ref={ref}>
-        <option value="selecione">Selecione</option>
+      <select
+        {...rest}
+        ref={ref}
+        defaultValue=""
+        className={error ? styles.errorSelect : styles.defaultSelect}
+      >
+        <option disabled className={styles.firstOption} value="">
+          Selecione
+        </option>
 
         {options.map((option) => (
           <option key={option.value} value={option.value}>

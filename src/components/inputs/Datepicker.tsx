@@ -38,6 +38,7 @@ const DatePicker = (
         dateFormat="dd/MM/yyyy"
         enableTabLoop={false}
         ref={ref}
+        className={error ? styles.errorInput : styles.defaultInput}
       />
 
       {error && errorMessage && (

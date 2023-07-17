@@ -17,7 +17,7 @@ const tripSchema = yup.object().shape({
     .string()
     .test("destinationValidator", "Selecione um destino válido", (value) => {
       console.log(value);
-      return value !== "selecione";
+      return value !== "";
     }),
   adults: yup
     .number()

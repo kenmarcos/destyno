@@ -6,12 +6,21 @@
 
   select {
     width: 100%;
-    border: 1px solid var.$gray-primary;
     border-radius: var.$size-2;
     background-color: transparent;
     padding: var.$size-2;
     font-size: var.$size-4;
+    border-width: 1px;
+    border-style: solid;
   }
+}
+
+.defaultSelect {
+  border-color: var.$gray-primary;
+}
+
+.errorSelect {
+  border-color: var.$red-primary;
 }
 
 .error {

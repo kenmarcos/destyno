@@ -13,7 +13,11 @@ const Input = (
 ) => {
   return (
     <div className={styles.input}>
-      <input {...rest} ref={ref} />
+      <input
+        {...rest}
+        ref={ref}
+        className={error ? styles.errorInput : styles.defaultInput}
+      />
 
       {error && errorMessage && (
         <small className={styles.error}>{errorMessage}</small>
