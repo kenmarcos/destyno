@@ -2,16 +2,91 @@
 @use "styles/mixins";
 
 .tripCheckout {
+  color: var.$gray-dark;
+
+  @include mixins.desktop {
+    width: 400px;
+  }
+}
+
+.tripDetails {
   border: 1px solid var.$gray-dark;
   border-radius: var.$size-3;
-  color: var.$gray-dark;
+
+  @include mixins.desktop {
+    position: sticky;
+    top: var.$size-14;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: var.$size-6;
+  padding-bottom: var.$size-5;
+  border-bottom: 1px solid var.$gray-light;
+  padding: var.$size-5;
+}
+
+.image {
+  position: relative;
+  height: 220px;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.tripInfo {
   padding: var.$size-5;
 
-  h2 {
-    font-weight: 600;
-    font-size: var.$size-6;
-    padding-bottom: var.$size-5;
-    border-bottom: 1px solid var.$gray-light;
-    margin-bottom: var.$size-5;
+  & > button {
+    width: 100%;
   }
+}
+
+.tripTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location {
+  font-weight: 700;
+  font-size: var.$size-5;
+  color: var.$orange-primary;
+  margin-bottom: var.$size-1;
+}
+
+.price {
+  font-weight: 600;
+  color: var.$orange-dark;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: var.$size-4;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.travelers {
+  span {
+    font-size: var.$size-3;
+  }
+}
+
+.travelers,
+.days {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalPrice {
+  font-size: var.$size-5;
+  display: flex;
+  justify-content: space-between;
+  margin: var.$size-4 0;
 }

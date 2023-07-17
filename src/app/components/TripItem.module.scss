@@ -4,7 +4,7 @@
 .tripItem {
   border-radius: var.$size-5;
   overflow: hidden;
-  min-height: 250px;
+  height: 100%;
   position: relative;
 
   &:hover img {
@@ -13,8 +13,7 @@
 }
 
 .image {
-  height: 100%;
-  position: relative;
+  min-height: 250px;
 
   img {
     object-fit: cover;
