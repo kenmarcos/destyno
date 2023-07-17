@@ -9,15 +9,15 @@ import styles from "./ConfirmationMessage.module.scss";
 const ConfirmationMessage = () => {
   const router = useRouter();
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     router.push("/");
-  //   }, 10000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.push("/");
+    }, 10000);
 
-  //   return () => {
-  //     clearTimeout(timer);
-  //   };
-  // }, []);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
 
   return (
     <section className={styles.confirmationMessage}>
