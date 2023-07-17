@@ -12,6 +12,26 @@
   height: 100%;
   padding: 0 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.link {
+  color: var.$white;
+  font-size: var.$size-5;
+  font-weight: 700;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: var.$size-3;
+
+  &:hover {
+    color: var.$orange-primary;
+    background-color: var.$white;
+  }
+}
+
+.activeLink {
+  color: var.$orange-primary;
+  background-color: var.$white;
 }
