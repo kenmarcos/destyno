@@ -3,6 +3,7 @@
 
 .confirmationMessage {
   padding: var.$size-8 0;
+  min-height: calc(100vh - 60px - var.$size-16 * 2);
   display: flex;
   flex-direction: column;
   align-items: center;
