@@ -2,16 +2,14 @@
 @use "styles/mixins";
 
 .input {
+  margin-top: var.$size-1;
+
   input {
     width: 100%;
     border: 1px solid var.$gray-primary;
     border-radius: var.$size-2;
     padding: var.$size-2;
     font-size: var.$size-4;
-
-    &:focus {
-      outline: 1px solid var.$orange-extralight;
-    }
   }
 }
 
