@@ -24,7 +24,8 @@
 }
 
 .small {
-  font-size: var.$size-3;
+  font-size: 14px;
+  padding: var.$size-3 var.$size-4;
 }
 
 .medium {
@@ -33,4 +34,5 @@
 
 .large {
   font-size: var.$size-5;
+  padding: var.$size-6 var.$size-5;
 }
