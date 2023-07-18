@@ -1,7 +1,7 @@
 import styles from "./Checkout.module.scss";
 
-import TripCheckout from "./components/TripCheckout";
-import TripData from "./components/TripData";
+import TripCheckout from "./components/tripCheckout/TripCheckout";
+import TripData from "./components/tripData/TripData";
 
 const Checkout = () => {
   return (

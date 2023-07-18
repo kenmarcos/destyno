@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import styles from "./RecommendedTrips.module.scss";
 
-import TripItem from "./TripItem";
+import TripItem from "./components/tripItem/TripItem";
 
 import { useSelectedTrip } from "providers/SelectedTrip";
 import trips from "utils/tripsData";

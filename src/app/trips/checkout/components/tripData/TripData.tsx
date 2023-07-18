@@ -3,21 +3,31 @@
 import { useEffect } from "react";
 import { Controller } from "react-hook-form";
 
-import Datepicker from "components/inputs/Datepicker";
-import Input from "components/inputs/Input";
-import Select from "components/inputs/Select";
+import Datepicker from "components/inputs/datepicker/Datepicker";
+import Input from "components/inputs/input/Input";
+import Select from "components/inputs/select/Select";
 
 import styles from "./TripData.module.scss";
 
+import { useTripData } from "./useTripData";
+
 import { addDays } from "date-fns";
-import { useTripData } from "hooks/useTripData";
 import { useSelectedTrip } from "providers/SelectedTrip";
 import { cpfMask, mobilePhoneMask } from "utils/formMasks";
 import trips from "utils/tripsData";
 
 const TripData = () => {
-  const { register, handleSubmit, handleOnSubmit, watch, errors, control } =
-    useTripData();
+  const {
+    register,
+    handleSubmit,
+    handleOnSubmit,
+    errors,
+    control,
+    adults,
+    children,
+    startDate,
+    endDate,
+  } = useTripData();
 
   const {
     selectedTrip,
@@ -26,12 +36,6 @@ const TripData = () => {
     countTotalDays,
     calculateTotalPrice,
   } = useSelectedTrip();
-
-  const adults = Number(watch("adults"));
-  const children = Number(watch("children"));
-
-  const startDate = watch("startDate");
-  const endDate = watch("endDate");
 
   useEffect(() => {
     countTotalTravelers(adults, children);

@@ -70,6 +70,12 @@ export const useTripData = () => {
       mobilePhone: "",
     },
   });
+
+  const adults = Number(watch("adults"));
+  const children = Number(watch("children"));
+
+  const startDate = watch("startDate");
+  const endDate = watch("endDate");
   const handleOnSubmit = (data: tripFormData) => {
     setSelectedTrip(initialSelectedTrip);
     reset();
@@ -79,9 +85,12 @@ export const useTripData = () => {
   return {
     register,
     handleSubmit,
-    watch,
     control,
     errors,
     handleOnSubmit,
+    adults,
+    children,
+    startDate,
+    endDate,
   };
 };

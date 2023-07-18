@@ -1,16 +1,13 @@
 "use client";
 
-import Button from "components/Button";
+import Button from "components/button/Button";
 
 import styles from "./Hero.module.scss";
 
+import { useHero } from "./useHero";
+
 const Hero = () => {
-  const goToRecommendedTrips = () => {
-    window.scrollTo({
-      top: document.getElementById("recommendedTrips")?.offsetTop,
-      behavior: "smooth",
-    });
-  };
+  const { goToRecommendedTrips } = useHero();
 
   return (
     <section className={styles.hero}>
