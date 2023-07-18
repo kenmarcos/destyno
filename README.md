@@ -4,9 +4,6 @@
         <img style="background-color:#f63202;padding:16px;border-radius:4px" width=200 src="/public/destyno.svg" alt="project-name" />
     </h1>
     <p>
-        Frase de efeito do projeto!
-    </p>
-    <p>
         <a href="#%EF%B8%8F-sobre-o-projeto" >Sobre o Projeto</a> •
         <a href="#-funcionalidades">Funcionalidades</a> •
         <a href="#%EF%B8%8F-instalação">Instalação</a> •
