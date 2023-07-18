@@ -23,7 +23,8 @@ const tripSchema = yup.object().shape({
   adults: yup
     .number()
     .transform((value) => (isNaN(value) ? undefined : value))
-    .required("Campo obrigatório"),
+    .required("Campo obrigatório")
+    .min(1, "Quantidade de adultos inválida"),
   children: yup
     .number()
     .transform((value) => (isNaN(value) ? undefined : value))
