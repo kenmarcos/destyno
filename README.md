@@ -9,7 +9,6 @@
     <p>
         <a href="#%EF%B8%8F-sobre-o-projeto" >Sobre o Projeto</a> •
         <a href="#-funcionalidades">Funcionalidades</a> •
-        <a href="#-layout">Layout</a> •
         <a href="#%EF%B8%8F-instalação">Instalação</a> •
         <a href="#%EF%B8%8F-tecnologias">Tecnologias</a> •
         <a href="#-autor">Autor</a>
@@ -21,10 +20,12 @@
 ## 🖥️ Sobre o Projeto
 
 <div align="center">
-    <img src="https://uploads-ssl.webflow.com/5ea82056771c9dd4b6f61bdc/60d0889c139877fe45366e87_Blog_main_improve_ad_quality_Dean_20210621.png" width=800/>
+    <a href="https://destyno.vercel.app/">
+        <img src="/public/home.png" width=800 style="border-radius:8px" />
+    </a>
     <br/>
     <br/>
-    <a href="http://marcos-kuribayashi.vercel.app/">
+    <a href="https://destyno.vercel.app/">
         <img src="https://img.shields.io/badge/demo-ver%20aplicação-blue?style=for-the-badge" alt="badge-usage" >
     </a>
 </div>
@@ -64,7 +65,13 @@ $ git clone git@github.com:<your_user>/destyno.git
 - Entre no diretório do projeto:
 
 ```Bash
-$ cd <project-name>
+$ cd destyno
+```
+
+- Para abrir o projeto no Visual Studio Code, execute o comando:
+
+```Bash
+$ code .
 ```
 
 - Instale as dependências:
