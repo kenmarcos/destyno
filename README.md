@@ -1,34 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- CABEÇALHO -->
+<div id="readme-top" align="center">
+    <h1>
+        <img style="background-color:#f63202;padding:16px;border-radius:4px" width=200 src="/public/destyno.svg" alt="project-name" />
+    </h1>
+    <p>
+        Frase de efeito do projeto!
+    </p>
+    <p>
+        <a href="#%EF%B8%8F-sobre-o-projeto" >Sobre o Projeto</a> •
+        <a href="#-funcionalidades">Funcionalidades</a> •
+        <a href="#-layout">Layout</a> •
+        <a href="#%EF%B8%8F-instalação">Instalação</a> •
+        <a href="#%EF%B8%8F-tecnologias">Tecnologias</a> •
+        <a href="#-autor">Autor</a>
+    </p>
+</div>
 
-## Getting Started
+<!-- SOBRE O PROJETO -->
 
-First, run the development server:
+## 🖥️ Sobre o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<div align="center">
+    <img src="https://uploads-ssl.webflow.com/5ea82056771c9dd4b6f61bdc/60d0889c139877fe45366e87_Blog_main_improve_ad_quality_Dean_20210621.png" width=800/>
+    <br/>
+    <br/>
+    <a href="http://marcos-kuribayashi.vercel.app/">
+        <img src="https://img.shields.io/badge/demo-ver%20aplicação-blue?style=for-the-badge" alt="badge-usage" >
+    </a>
+</div>
+
+<br/>
+
+Projeto criado para etapa de desafio técnico do processo seletivo para vaga de desenvolvedor front-end júnior da [Wizzi](https://github.com/Wizzi-Oficial/tech_challenge).
+
+Destyno é uma aplicação de turismo em que o usuário pode escolher um destino para viajar e especificar mais informações sobre a viagem.
+
+Na página de checkout, antes de confirmar a compra, o usuário pode conferir alguns detalhes da viagem como imagem e breve descrição do local de destino, além de informações sobre a quantidade de passageiros, quantidade de dias e o total a pagar.
+
+<!-- FUNCIONALIDADES -->
+
+## 💡 Funcionalidades
+
+- [x] Tela Home
+  - [x] Informações de destaque sobre a aplicação
+  - [x] Lista de destinos recomendados
+- [x] Tela "Checkout"
+  - [x] Formulário com validações para usuário preencher com informações da viagem
+- [x] Tela de Confirmação
+  - [x] Exibição de mensagem de confirmação ao usuário após envio com sucesso do formulário
+
+<!-- INSTALAÇÃO -->
+
+## ⚙️ Instalação
+
+- Faça o fork desse repositório
+
+- Abra o terminal e clone o repositório:
+
+```Bash
+$ git clone git@github.com:<your_user>/destyno.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Entre no diretório do projeto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```Bash
+$ cd <project-name>
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Instale as dependências:
 
-## Learn More
+```Bash
+$ yarn install
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Execute a aplicação em ambiente de desenvolvimento:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```Bash
+$ yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Pronto! A aplicação, agora, pode ser acessada através da url https://localhost:3000/.
 
-## Deploy on Vercel
+<!-- TECNOLOGIAS -->
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tecnologias
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Para o desenvolvimento desse projeto, as seguintes ferramentas foram utilizadas:
+
+- **[React.js](https://pt-br.reactjs.org/)**
+- **[Next.js](https://nextjs.org/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[Sass](https://sass-lang.com/)**
+- **[React Hook Form](https://react-hook-form.com/)**
+- **[Yup](https://github.com/jquense/yup)**
+- **[React Datepicker](https://www.npmjs.com/package/react-datepicker)**
+- **[Date-fns](https://date-fns.org/)**
+
+## 👨‍💻 Autor
+
+<img style="border-radius: 15%;" src="https://gitlab.com/uploads/-/system/user/avatar/8603970/avatar.png?width=400" width=70 alt="author-profile-picture"/>
+
+Marcos Kenji Kuribayashi
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/marcos-kuribayashi/) [![Gmail Badge](https://img.shields.io/badge/-marcosken13@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:marcosken13@gmail.com)
+
+---
+
+Desenvolvido por Marcos Kenji Kuribayashi 😉
