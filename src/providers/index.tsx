@@ -2,14 +2,14 @@
 
 import { ReactNode } from "react";
 
-import { TripProvider } from "./Trip";
+import { SelectedTripProvider } from "./SelectedTrip";
 
 interface ProvidersProps {
   children: ReactNode;
 }
 
 const Providers = ({ children }: ProvidersProps) => {
-  return <TripProvider>{children}</TripProvider>;
+  return <SelectedTripProvider>{children}</SelectedTripProvider>;
 };
 
 export default Providers;

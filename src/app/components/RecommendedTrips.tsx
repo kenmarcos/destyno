@@ -6,11 +6,11 @@ import styles from "./RecommendedTrips.module.scss";
 
 import TripItem from "./TripItem";
 
-import { useTrip } from "providers/Trip";
+import { useSelectedTrip } from "providers/SelectedTrip";
 import trips from "utils/tripsData";
 
 const RecommendedTrips = () => {
-  const { selectTrip } = useTrip();
+  const { selectTrip } = useSelectedTrip();
 
   return (
     <section id="recommendedTrips" className={styles.recommendedTrips}>

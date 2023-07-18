@@ -10,3 +10,14 @@ export interface Trip {
   price: number;
   recommended: boolean;
 }
+
+export interface SelectedTrip {
+  trip: Trip;
+  adultCount: number;
+  childCount: number;
+  travelerCount: number;
+  dayCount: number;
+  totalPrice: any;
+  startDate: Date | null;
+  endDate: Date | null;
+}
