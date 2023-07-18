@@ -6,7 +6,10 @@ import Countdown from "react-countdown";
 import { HiOutlineCheckBadge } from "react-icons/hi2";
 
 import styles from "./ConfirmationMessage.module.scss";
+
+import { initialSelectedTrip, useSelectedTrip } from "providers/SelectedTrip";
 const ConfirmationMessage = () => {
+  const { selectedTrip, setSelectedTrip } = useSelectedTrip();
   const router = useRouter();
 
   useEffect(() => {
@@ -14,10 +17,12 @@ const ConfirmationMessage = () => {
       router.push("/");
     }, 10000);
 
+    setSelectedTrip(initialSelectedTrip);
+
     return () => {
       clearTimeout(timer);
     };
-  }, []);
+  }, [router, setSelectedTrip]);
 
   return (
     <section className={styles.confirmationMessage}>

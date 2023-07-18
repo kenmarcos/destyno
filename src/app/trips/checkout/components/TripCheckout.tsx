@@ -6,22 +6,21 @@ import Button from "components/Button";
 
 import styles from "./TripCheckout.module.scss";
 
-import { useTrip } from "providers/Trip";
+import { useSelectedTrip } from "providers/SelectedTrip";
 import { formatPrice } from "utils/formats";
 const TripCheckout = () => {
-  const { selectedTrip, adultCount, childCount, dayCount, totalPrice } =
-    useTrip();
+  const { selectedTrip } = useSelectedTrip();
 
   return (
     <section className={styles.tripCheckout}>
       <div className={styles.tripDetails}>
         <h2 className={styles.title}>Detalhes da Viagem</h2>
 
-        {selectedTrip?.coverImage && (
+        {Object.keys(selectedTrip.trip).length > 0 && selectedTrip?.trip && (
           <div className={styles.image}>
             <Image
-              src={selectedTrip.coverImage}
-              alt={selectedTrip.location}
+              src={selectedTrip.trip.coverImage}
+              alt={selectedTrip.trip.location}
               fill
               sizes="100%"
             />
@@ -29,29 +28,28 @@ const TripCheckout = () => {
         )}
 
         <div className={styles.tripInfo}>
-          {Object.keys(selectedTrip).length > 0 && (
-            <>
-              <div className={styles.tripTitle}>
-                <p className={styles.location}>{selectedTrip.location}</p>
-                <p className={styles.price}>
-                  ({formatPrice(selectedTrip.price)})
-                </p>
-              </div>
-
-              <p className={styles.description}>
-                {selectedTrip.locationDescription}
+          {Object.keys(selectedTrip.trip).length > 0 && selectedTrip?.trip && (
+            <div className={styles.tripTitle}>
+              <p className={styles.location}>{selectedTrip.trip.location}</p>
+              <p className={styles.price}>
+                ({formatPrice(selectedTrip.trip.price)})
               </p>
-            </>
+            </div>
           )}
+
+          <p className={styles.description}>
+            {selectedTrip.trip.locationDescription}
+          </p>
 
           <div className={styles.travelers}>
             <p>Total de passageiros:</p>
             <p>
-              {adultCount + childCount}
-              {adultCount + childCount > 0 && (
+              {selectedTrip.travelerCount}
+              {selectedTrip.travelerCount > 0 && (
                 <span>
                   {" "}
-                  ({adultCount} adultos + {childCount} crianças)
+                  ({selectedTrip.adultCount} adultos + {selectedTrip.childCount}{" "}
+                  crianças)
                 </span>
               )}
             </p>
@@ -59,12 +57,12 @@ const TripCheckout = () => {
 
           <div className={styles.days}>
             <p>Total de dias:</p>
-            <p>{dayCount}</p>
+            <p>{selectedTrip.dayCount}</p>
           </div>
 
           <div className={styles.totalPrice}>
             <p>Total a pagar:</p>
-            <p>{formatPrice(totalPrice)}</p>
+            <p>{formatPrice(selectedTrip.totalPrice)}</p>
           </div>
 
           <Button size="small" type="submit" form="tripForm">
