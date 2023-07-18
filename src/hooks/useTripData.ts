@@ -2,6 +2,7 @@ import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
 import { yupResolver } from "@hookform/resolvers/yup";
+import { initialSelectedTrip, useSelectedTrip } from "providers/SelectedTrip";
 import * as yup from "yup";
 
 const tripSchema = yup.object().shape({
@@ -44,19 +45,21 @@ const tripSchema = yup.object().shape({
 type tripFormData = yup.InferType<typeof tripSchema>;
 
 export const useTripData = () => {
+  const { selectedTrip, setSelectedTrip } = useSelectedTrip();
   const router = useRouter();
 
   const {
     register,
     handleSubmit,
     watch,
+    reset,
     control,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(tripSchema),
     defaultValues: {
       origin: "",
-      destination: "",
+      destination: selectedTrip.trip?.id ?? "",
       adults: 0,
       children: 0,
       startDate: null,
@@ -68,6 +71,8 @@ export const useTripData = () => {
     },
   });
   const handleOnSubmit = (data: tripFormData) => {
+    setSelectedTrip(initialSelectedTrip);
+    reset();
     router.push("/trips/confirmation");
   };
 
