@@ -9,8 +9,6 @@ import styles from "./Header.module.scss";
 const Header = () => {
   const pathname = usePathname();
 
-  console.log(pathname);
-
   return (
     <header className={styles.header}>
       <div className={styles.container}>
