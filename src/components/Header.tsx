@@ -14,10 +14,11 @@ const Header = () => {
       <div className={styles.container}>
         <Link href="/">
           <Image
+            className={styles.logo}
             src="/destyno.svg"
             alt="Logo do Destyno"
-            width={250}
-            height={50}
+            width={519}
+            height={82}
           />
         </Link>
 
