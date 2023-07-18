@@ -77,9 +77,9 @@ export const useTripData = () => {
   const startDate = watch("startDate");
   const endDate = watch("endDate");
   const handleOnSubmit = (data: tripFormData) => {
+    router.push("/trips/confirmation");
     setSelectedTrip(initialSelectedTrip);
     reset();
-    router.push("/trips/confirmation");
   };
 
   return {
